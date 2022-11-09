@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pulls
-Issues
-Marketplace
-Explore
- 
-@Prax0o 
-streamlit
-/
-example-app-bert-keyword-extractor
-Public
-Code
-Issues
-2
-Pull requests
-1
-Actions
-Projects
-Security
-Insights
-example-app-bert-keyword-extractor/app.py /
-@CharlyWargnier
-CharlyWargnier Removed logo
-Latest commit 8cdabd8 on Dec 13, 2021
- History
- 1 contributor
-228 lines (176 sloc)  6.39 KB
-
 import streamlit as st
 import numpy as np
 from pandas import DataFrame
@@ -122,7 +93,9 @@ with st.form(key="my_form"):
             min_value=1,
             max_value=4,
             help="""The minimum value for the ngram range.
+
 *Keyphrase_ngram_range* sets the length of the resulting keywords/keyphrases.
+
 To extract keyphrases, simply set *keyphrase_ngram_range* to (1, 2) or higher depending on the number of words you would like in the resulting keyphrases.""",
             # help="Minimum value for the keyphrase_ngram_range. keyphrase_ngram_range sets the length of the resulting keywords/keyphrases. To extract keyphrases, simply set keyphrase_ngram_range to (1, # 2) or higher depending on the number of words you would like in the resulting keyphrases.",
         )
@@ -133,7 +106,9 @@ To extract keyphrases, simply set *keyphrase_ngram_range* to (1, 2) or higher de
             min_value=1,
             max_value=4,
             help="""The maximum value for the keyphrase_ngram_range.
+
 *Keyphrase_ngram_range* sets the length of the resulting keywords/keyphrases.
+
 To extract keyphrases, simply set *keyphrase_ngram_range* to (1, 2) or higher depending on the number of words you would like in the resulting keyphrases.""",
         )
 
@@ -157,6 +132,7 @@ To extract keyphrases, simply set *keyphrase_ngram_range* to (1, 2) or higher de
             help="""The higher the setting, the more diverse the keywords.
             
 Note that the *Keyword diversity* slider only works if the *MMR* checkbox is ticked.
+
 """,
         )
 
@@ -250,18 +226,3 @@ df = df.format(format_dictionary)
 
 with c2:
     st.table(df)
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-example-app-bert-keyword-extractor/app.py at main · streamlit/example-app-bert-keyword-extractor
