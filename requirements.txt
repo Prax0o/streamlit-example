@@ -6,3 +6,4 @@ matplotlib
 keybert
 flair
 click<8
+contractions
