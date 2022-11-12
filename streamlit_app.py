@@ -25,6 +25,6 @@ vect = pk.load(open('vect', 'rb'))
 
 if st.button(label="Search"):
   list_topic = topic_search(TEXT, nb_topic, model=model, vectorizer=vect)
-  st.write('The topic found are listed below (sort by possibilities)\n')
+  st.write('The topic found are listed below (sort by possibilities) :')
   for topic in list_topic:
     st.write(topic)
