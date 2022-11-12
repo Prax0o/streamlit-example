@@ -16,11 +16,11 @@ nb_topic = st.sidebar.number_input("Number of Topic",min_value=1,max_value=15)
 
 
 if(ModelType=="Write by hand"):
-  doc = st.text_area("# Write your comment below",height=510)
+  doc = st.text_area("Write your comment below",height=510)
   st.write("Write by hand")
   TEXT = doc
 else:
-  index_review = st.number_input("# Index of topic from Database",min_value=0,max_value=24999)
+  index_review = st.number_input("Index of topic from Database",min_value=0,max_value=24999)
   TEXT = dataset_df.text[index_review]
   st.write(TEXT)
 
