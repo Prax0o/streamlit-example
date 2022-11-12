@@ -16,12 +16,14 @@ if(ModelType=="Write by hand"):
   st.write("Write by hand")
   TEXT = doc
 else:
-  st.write("Choose from Dataset")
+  index_review = st.number_input("Index of topic from Database",min_value=0,max_value=24999)
+  st.write(dataset_df.text[index_review])
 
 #main
 
 model = pk.load(open('model', 'rb'))
 vect = pk.load(open('vect', 'rb'))
+dataset_df = pd.read_csv('dataset')
 
 
 if st.button(label="Search"):
