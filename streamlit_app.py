@@ -1,6 +1,7 @@
 import streamlit as st
 from functions import topic_search
 import pickle as pk
+import pandas as pd
 
 st.set_page_config(page_title="ReviewAnalyzer Eliott BENOIT")
 
