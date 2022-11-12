@@ -1,9 +1,4 @@
 altair
 pandas
 streamlit
-seaborn
-matplotlib
-keybert
-flair
-click<8
 contractions
