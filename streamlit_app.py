@@ -5,6 +5,10 @@ import pandas as pd
 
 st.set_page_config(page_title="ReviewAnalyzer Eliott BENOIT")
 
+model = pk.load(open('model', 'rb'))
+vect = pk.load(open('vect', 'rb'))
+dataset_df = pd.read_csv('dataset')
+
 #sidebar
 
 ModelType = st.sidebar.radio("Choose your model",["Write by hand", "Choose from Dataset"])
@@ -20,11 +24,6 @@ else:
   st.write(dataset_df.text[index_review])
 
 #main
-
-model = pk.load(open('model', 'rb'))
-vect = pk.load(open('vect', 'rb'))
-dataset_df = pd.read_csv('dataset')
-
 
 if st.button(label="Search"):
   list_topic = topic_search(TEXT, nb_topic, model=model, vectorizer=vect)
