@@ -12,4 +12,4 @@ import json
 
 st.set_page_config(page_title="ReviewAnalyzer Eliott BENOIT")
 
-ModelType = st.radio("Choose your model",["DistilBERT (Default)", "Flair"])
+ModelType = st.sidebar.radio("Choose your model",["DistilBERT (Default)", "Flair"])
