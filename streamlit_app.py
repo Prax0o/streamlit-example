@@ -18,10 +18,10 @@ else:
 
 #main
 
+model = pk.load(open('model', 'rb'))
+vect = pk.load(open('vect', 'rb'))
+
 
 if st.button(label="Search"):
   st.write(TEXT)
-
-
-
-#st.write(topic_search(TEXT, 3, model=model, vect=vect))
+  st.write(topic_search(TEXT, 3, model=model, vect=vect))
