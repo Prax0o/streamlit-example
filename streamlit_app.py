@@ -21,7 +21,8 @@ if(ModelType=="Write by hand"):
   TEXT = doc
 else:
   index_review = st.number_input("Index of topic from Database",min_value=0,max_value=24999)
-  st.write(dataset_df.text[index_review])
+  TEXT = dataset_df.text[index_review]
+  st.write(TEXT)
 
 #main
 
