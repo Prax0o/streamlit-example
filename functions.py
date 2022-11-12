@@ -106,6 +106,7 @@ model = pk.load(open(MODEL_FILE, 'rb'))
 vect = pk.load(open(VECT_FILE, 'rb'))
 
 def topic_search(text, nb_topic, model=model, vectorizer=vect):
+  text = [text]
   my_vertorizer = vect.transform(text)
   my_model = model.transform(my_vertorizer)
   topics = []
