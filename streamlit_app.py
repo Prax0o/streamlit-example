@@ -1,5 +1,5 @@
 import streamlit as st
-
+from 
 st.set_page_config(page_title="ReviewAnalyzer Eliott BENOIT")
 
 ModelType = st.sidebar.radio("Choose your model",["write", "choose"])
@@ -11,3 +11,6 @@ doc = st.text_area("write your comment below",height=510)
 if st.button(label="Search"):
   st.write('OK')
 
+ 
+
+st.write(topic_search(TEXT, 3, model=model, vect=vect))
