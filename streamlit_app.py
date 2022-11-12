@@ -18,9 +18,8 @@ nb_topic = st.sidebar.number_input("Number of Topic",min_value=1,max_value=15)
 
 doc = st.text_area("write your comment below",height=510)
 
-submit_button = st.form_submit_button(label="Search")
-if not submit_button:
+submit_button = st.button(label="Search")
+if not button:
     st.stop()
-   
-if submit_button:
+if button:
   print('OK')
