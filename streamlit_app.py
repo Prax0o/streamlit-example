@@ -7,7 +7,7 @@ st.set_page_config(page_title="ReviewAnalyzer Eliott BENOIT")
 
 model = pk.load(open('model', 'rb'))
 vect = pk.load(open('vect', 'rb'))
-dataset_df = pd.read_csv('dataset')
+dataset_df = pd.read_csv('dataset.csv')
 
 #sidebar
 
