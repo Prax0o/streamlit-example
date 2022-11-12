@@ -102,8 +102,8 @@ import numpy as np
 
 topic_nuns = ['atmosphere_sound', 'chicken_menu', 'bad_service', 'pizza_menu', 'delivery', 'long_wait', 'drinks', 'wrong_marketing', 'dirty', 'rude_staff', 'burger_menu', 'over_priced', 'not_tasty', 'not_accessible', 'seasoning']
 
-  model = pk.load(open(MODEL_FILE, 'rb'))
-  vect = pk.load(open(VECT_FILE, 'rb'))
+model = pk.load(open(MODEL_FILE, 'rb'))
+vect = pk.load(open(VECT_FILE, 'rb'))
 
 def topic_search(text, nb_topic, model=model, vectorizer=vect):
   my_vertorizer = vect.transform(text)
