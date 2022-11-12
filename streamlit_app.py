@@ -20,7 +20,7 @@ else:
 
 
 if st.button(label="Search"):
-  st.write('OK')
+  st.write(TEXT)
 
 
 
