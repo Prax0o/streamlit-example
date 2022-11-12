@@ -12,5 +12,5 @@ import json
 
 st.set_page_config(page_title="ReviewAnalyzer Eliott BENOIT")
 
-ModelType = st.sidebar.radio("Choose your model",[", "Flair"])
+ModelType = st.sidebar.radio("Choose your model",["write", "choose"])
 nb_topic = st.sidebar.number_input("Number of Topic",min_value=1,max_value=15)
