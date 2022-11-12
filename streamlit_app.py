@@ -25,4 +25,4 @@ vect = pk.load(open('vect', 'rb'))
 
 if st.button(label="Search"):
   st.write(TEXT)
-  st.write(topic_search(TEXT, 3, model=model, vectorizer=vect))
+  st.write(topic_search(TEXT, nb_topic, model=model, vectorizer=vect))
